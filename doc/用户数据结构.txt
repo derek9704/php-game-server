@@ -1,0 +1,38 @@
+session
+===================================
+userId		10			游戏用户ID
+
+
+user数据
+===================================
+heroes 英雄 {
+	tid -> hid
+}
+arena {
+	defenceTeam [4, 5]  佣兵防守队伍
+	winCount	66		胜场数
+}
+mine {
+	id
+	rewardCoin
+	enemyLevel
+	enemy []
+	map []
+	times
+	lastRefreshDay
+}
+
+id			1		玩家ID
+name		Derek	玩家名
+gold		1000	当前钻石
+coin		1000	当前金币
+level		20		当前等级
+stamina		50		当前体力
+staminaMax	500		体力上限
+staminaUpdateTime	体力刷新时间
+exp			100		当前经验值
+upgradeExp	1000	升级所需经验
+everyDayRefreshTime	2015-01-08	日刷新计时
+lastLoginTime 	1420689129		最近登陆时间
+battleTeam	[4, 5]	佣兵战斗队伍
+mainHero	1		主英雄类型

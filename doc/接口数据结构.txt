@@ -1,0 +1,106 @@
+data数据
+===================================
+session_id	f23jkawfweakfljk2kl
+
+user {
+	id			1		玩家ID
+	name		Derek	玩家名
+	gold		1000	钻石
+	coin		1000	金币
+	level		20		当前等级
+	stamina		50		当前体力
+	staminaMax	500		体力上限
+	exp			100		当前经验值
+	upgradeExp	1000	升级所需经验
+	battleTeam	[4, 5]	佣兵战斗队伍
+	mainHero	1		主英雄类型
+} 
+
+heroes 英雄对象 {
+	tid -> {
+		id		1		英雄ID
+		tid		1		英雄类型
+		level	60		等级
+		owner	30		用户ID
+		atk		30.00	攻击力
+		matk	20.00	魔攻
+		hp		101.21	血量
+		fc		300.00	战斗力
+		upgradeCoin	30	升级所需金币
+		type	1		英雄类型
+		name	史迪奇	英雄名
+		size	2		英雄体型
+		weight	3000	英雄权重
+		atk_increment 10.5	攻击力增长幅度
+		matk_increment 21.5	魔攻增长幅度
+		hp_increment 234.4	血量增长幅度
+		fc_increment 300.3	战斗力增长幅度
+		critical 	0.2		暴击率
+		critical_multiple 	1.0	暴击倍数
+		atk_range 	3.0		攻击范围
+		atk_speed 	0.5		普攻速度
+		move_speed 	3.0		移动速度
+		describe 	屌丝职业		描述
+		soul_awake 	30		招募所需灵魂石
+		totalFc	500.00		总战斗力
+		skill1 技能1对象 {
+			id				1		技能ID
+			level			60		等级
+			upgradeCoin		30		升级所需金币			
+			name			拔刀斩	技能名
+			describe		XXXX	技能描述
+			arg1			54.3	参数1
+			arg1_increment	40.3	参数1增长幅度
+			arg2			54.3	参数2
+			arg2_increment	40.3	参数2增长幅度
+			fc				300.00	战斗力
+			fc_increment 	300.3	战斗力增长幅度
+		}		
+		skill2 技能2对象 {
+		
+		}		
+	}
+}
+
+arena 竞技场 {
+	defenceTeam [4, 5]  佣兵防守队伍
+	winCount	66		胜场数
+	log			[]		日志
+	myRank		5		我的竞技场排名
+	rivals [
+			{
+				id
+				name
+				level
+				rank
+				defenceTeam [
+					{
+						tid
+						level
+						fc
+					},{},{},...
+				]
+			},
+			{},
+			{}
+	]
+	rankList []			排行榜，格式和rivals相同
+	battleData	[]		战斗数据
+}
+
+mine {
+	id
+	rewardCoin
+	map []
+	enemy []
+	times
+	name
+	resource
+	levelLimit
+	stamina {
+		hit
+		magic
+		win
+		lose
+	}
+}

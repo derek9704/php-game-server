@@ -1,0 +1,39 @@
+GM工具
+创建用户 gmCreateUser userport:derek9704|name:帝释天
+增加玩家体力 gmAddUserStamina num:10000
+增加玩家货币 gmAddUserCurrency coin:10000|gold:10000
+玩家升级 gmUserLevelUp
+
+用户测试工具
+查询用户缓存 debugQueryUserCache
+赋值用户缓存 debugSetUserCache path|val
+删除用户缓存 debugRemoveUserCache path
+
+英雄测试工具
+查询英雄缓存 debugQueryHeroCache id
+赋值英雄缓存 debugSetHeroCache id|path|val
+删除英雄缓存 debugRemoveHeroCache id|path
+
+玩家
+队伍配置 setUserBattleTeam tids:[4,5]
+
+英雄
+招募英雄 hireHero tid
+英雄转职 transferMainHero tid
+英雄升级 upgradeHero tid
+英雄技能升级 upgradeHeroSkill tid|index
+
+探索
+进入矿洞 enterMine
+离开矿洞 leaveMine stamina|coin|gold|map:0
+刷新矿洞 refreshMine
+
+竞技场
+获取信息 getArenaInfo
+获取排行 getArenaRank
+获取对战记录 getArenaLog
+防守队伍配置 setArenaTeam tids:[4,5]
+开始挑战 startArenaBattle rank
+完成挑战 finishArenaBattle win|rivalId
+
+结束

@@ -1,0 +1,19 @@
+hero数据
+===================================
+
+id		1		英雄ID
+tid		1		英雄类型
+level	60		等级
+owner	30		用户ID
+atk		30.00	攻击力
+matk	20.00	魔攻
+hp		101.21	血量
+fc		300.00	战斗力
+upgradeCoin	30	升级所需金币
+skill1	技能1对象 {
+	id				1		技能ID
+	level			60		等级
+	upgradeCoin		30		升级所需金币
+}
+skill2	技能2对象 {
+}
